@@ -5,21 +5,204 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Portfolio</title>
     <link rel="stylesheet" href="style.css">
+    <script src="https://kit.fontawesome.com/3cea6c30d0.js" crossorigin="anonymous"></script>
 </head>
 <body>
     <div id="header">
         <div class="container">
             <nav>
                 <img class="logo" src="images/LOGO.png" alt="">
-                <ul>
-                    <li><a href="">Home</a></li>
-                    <li><a href="">About</a></li>
-                    <li><a href="">Services</a></li>
-                    <li><a href="">Portfolio</a></li>
-                    <li><a href="">Contact</a></li>
+                <ul id="sidemenu">
+                    <li><a href="#header">Home</a></li>
+                    <li><a href="#about">About</a></li>
+                    <li><a href="#services">Services</a></li>
+                    <li><a href="#portfolio">Portfolio</a></li>
+                    <li><a href="#contact">Contact</a></li>
+                    <i class="fa-solid fa-xmark" onclick="closemenu()"></i>
                 </ul>
+                <i class="fa-solid fa-bars" onclick="openmenu()"></i>
             </nav>
         </div>
+        <div class="header-text">
+            <p>Web Developer</p>
+            <h1>Hi, I'am <span> MATT</span><br> your Web Developer</h1>
+        </div>
     </div>
+
+<!-------------about------------->
+    <div id="about">
+        <div class="container">
+            <div class="row">
+                <div class="about-col-1">
+                    <img src="images/user.jpg" style="width: 550px; height: 550px;">
+                </div>
+                <div class="about-col-2">
+                    <h1 class="sub-title">About Me</h1>
+                    <p>I am 3rd Year Student right now and im build a Web. While though i am Play a lot of games like VALORANT, FARLGITHT, MOBILE LEGENDS Etc.</p>
+                    
+                    <div class="tab-titles">
+                        <p class="tab-links active-link" onclick="opentab('skills')">Skills</p>
+                        <p class="tab-links" onclick="opentab('experience')">Experience</p>
+                        <p class="tab-links" onclick="opentab('education')">Education</p>
+                    </div>
+                    <div class="tab-contents active-tab" id="skills">
+                        <ul>
+                            <li><span>Lane</span><br>ADC, Gold Lane and also support</li>
+                            <li><span>Web Development</span><br>Front End </li>
+                        </ul>
+                    </div>
+                    <div class="tab-contents" id="experience">
+                        <ul>
+                            <li><span>Game</span><br>Valorant</li>
+                            <li><span>Games</span><br>Farlight</li>
+                            <li><span>Game</span><br>MOBILE LEGENDS</li>
+                        </ul>
+                    </div>
+                    <div class="tab-contents" id="education">
+                        <ul>
+                            <li><span>Design</span><br>Designing Web/App interfaces</li>
+                            <li><span>Web Development</span><br>Front End</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+<!-- ------------SERVICES-------- -->
+<div id="services">
+    <div class="container">
+        <h1 class="subtitle">My Services</h1>
+        <div class="services-list">
+            <div>
+                <i class="fa-solid fa-code"></i>
+                <h2>Web Design</h2>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Repellat quo, quia nulla obcaecati velit officiis odit omnis accusamus, eveniet iure aperiam in! Quaerat impedit et voluptatum. Recusandae optio earum delectus.</p>
+                <a href="#">Learn more</a>
+            </div>
+            <div>
+                <i class="fa-solid fa-crop"></i>
+                <h2>UI Design</h2>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Repellat quo, quia nulla obcaecati velit officiis odit omnis accusamus, eveniet iure aperiam in! Quaerat impedit et voluptatum. Recusandae optio earum delectus.</p>
+                <a href="#">Learn more</a>
+            </div>
+            <div>
+                <i class="fa-brands fa-app-store"></i>
+                <h2>App Design</h2>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Repellat quo, quia nulla obcaecati velit officiis odit omnis accusamus, eveniet iure aperiam in! Quaerat impedit et voluptatum. Recusandae optio earum delectus.</p>
+                <a href="#">Learn more</a>
+            </div>
+        </div>
+    </div>
+</div>
+<!-- -------portfolio------- -->
+<div id="portfolio">
+    <div class="container">
+        <h1 class="subtitle">My Work</h1>
+        <div class="work-list">
+            <div class="work">
+                <img src="images/work1.jpg" alt="">
+                <div class="layer">
+                    <h3>VALORANT</h3>
+                    <p>Grinding on diamond until this happend!</p>
+                    <a href=""><i class="fa-solid fa-link"></i></a>
+                </div>
+            </div>
+            <div class="work">
+                <img src="images/work2.jpg" alt="">
+                <div class="layer">
+                    <h3>FARLIGHT</h3>
+                    <p>MK.R montage!</p>
+                    <a href="https://www.tiktok.com/@bluematter_/video/7252898068654230790?is_from_webapp=1&sender_device=pc&web_id=7167204904854947330"><i class="fa-solid fa-link"></i></a>
+                </div>
+            </div>
+            <div class="work">
+                <img src="images/work3.jpg" alt="">
+                <div class="layer">
+                    <h3>MOBILE LEGENDS</h3>
+                    <p>Fanny!</p>
+                    <a href=""><i class="fa-solid fa-link"></i></a>
+                </div>
+            </div>
+        </div>
+        <a href="#" class="btn">See more</a>
+    </div>
+</div>
+<!-- ----------contact---------- -->
+<div id="contact">
+    <div class="container">
+        <div class="row">
+            <div class="contact-left">
+                <h1 class="sub-title">Contact Me</h1>
+                <p><i class="fa-solid fa-paper-plane"></i>marcialmattadrian@gmail.com</p>
+                <p><i class="fa-solid fa-phone"></i>09859467361</p>
+                <div class="social-icons">
+                    <a href="https://www.facebook.com/mattsu.marcial"><i class="fa-brands fa-facebook"></i></a>
+                    <a href="https://www.tiktok.com/@bluematter_"><i class="fa-brands fa-tiktok"></i></a>
+                    <a href="https://www.instagram.com/mattsuu_/"><i class="fa-brands fa-instagram"></i></a>
+                    <a href="#"><i class="fa-brands fa-twitter"></i></a>
+                </div>
+                <a href="" class="btn btn2">Download CV</a>
+            </div>
+            <div class="contact-right">
+                <form name="submit-to-google-sheet">
+                    <input type="text" name="Name" placeholder="Your Name" required>
+                    <input type="email" name="Email" placeholder="Your Email" required> 
+                    <textarea name="Message" rows="6" placeholder="Your Message"></textarea>
+                    <button type="submit" class="btn btn2">Submit</button> 
+                </form>
+                <span id="msg"></span>
+            </div>
+        </div>
+    </div>
+</div>
+
+<!-- -------------Script------------- -->
+    <script>
+        var tablinks = document.getElementsByClassName("tab-links");
+        var tabcontents = document.getElementsByClassName("tab-contents");
+
+        function opentab(tabname){
+            for(tablink of tablinks){
+                tablink.classList.remove("active-link");
+            }
+            for(tabcontent of tabcontents){
+                tabcontent.classList.remove("active-tab");
+            }
+            event.currentTarget.classList.add("active-link");
+            document.getElementById(tabname).classList.add("active-tab");
+        }
+    </script>
+
+    <script>
+        
+        var sidemenu = document.getElementById("sidemenu");
+
+        function openmenu(){
+            sidemenu.style.right = "0";
+        }
+        
+        function closemenu(){
+            sidemenu.style.right = "-200px";
+        }
+    </script>
+    <script>
+        
+            const scriptURL = 'https://script.google.com/macros/s/AKfycbwvdieEUUxD_p-rMQAR5_iy27mZyzf9FyM_6ESmzK-Rx_9BzY-0pBwoSQjTw59R-3GyLQ/exec'
+            const form = document.forms['submit-to-google-sheet']
+            const msg = document.getElementById("msg")
+            form.addEventListener('submit', e => {
+                e.preventDefault()
+                fetch(scriptURL, { method: 'POST', body: new FormData(form)})
+                .then(response => {
+                    msg.innerHTML = "Messeage sent successfully!"
+                    setTimeout(function(){
+                        msg.innerHTML = ""
+                    },2000)
+                    form.reset()
+                })
+                .catch(error => console.error('Error!', error.message))
+            })    
+    </script>
+
 </body>
 </html>
